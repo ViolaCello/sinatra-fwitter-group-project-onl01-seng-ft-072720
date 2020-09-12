@@ -1,0 +1,5 @@
+<h1>Show Tweets by <%= current_user.username %></h1>
+
+<% @tweets.each do |i| %>
+<p><a href = "/tweets/<%=i.id%><%= i.content  %></a></p> 
+<% end %>
